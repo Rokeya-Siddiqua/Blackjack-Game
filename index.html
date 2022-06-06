@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 style="color: brown; font-size: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                <marquee style="text-shadow: 1px 1px 1px black; width: 50%;"> 
+                    Blackjack Game
+                </marquee> 
+            </h1>
+        </div> <br> <br>
+        <div style="border: 2px solid black;">
+          <P>
+            <span style="font-size: 20px; font-weight: bolder;">Rules: </span> 
+            <span style="font-size: 18px; font-family: 'Times New Roman', Times, serif;">
+                Each participant attempts to beat the dealer by getting a count as close to 21 as possible, without going over 21. It is up to each individual player if an ace is worth 1 or 11. Face cards are 10 and any other card is its pip value.
+            </span> 
+          </P>
+        </div><br>
+        <h3><span id="blackjack-result-id">
+            Let's Play!
+        </span></h3>
+        <div class="fex_box_row_1" id="flex_box_row_1_id">
+            
+            <div class="your-div" id="your-div-id">
+                <h2 style="color: white; font-weight: bolder; text-align: center;">You:
+                    <span id="your-result-id">
+                        0
+                    </span>
+                </h2>
+            </div>
+            <div class="dealer-div" id="dealer-div-id">
+                <h2 style="color: white; font-weight: bolder;">Dealer:
+                    <span id="dealer-result-id">
+                        0
+                    </span>
+                </h2>
+            </div>
+        </div>
+
+        <div class="fex_box_row_2" id="flex_box_row_2_id">
+
+                <button id="Hit-button" class="btn-lg btn-primary mr-2">Hit</button>
+                <button id="Stand-button" class="btn-lg btn-warning mr-2">Stand</button>
+                <button id="Deal-button" class="btn-lg btn-danger mr-2">Deal</button>
+
+        </div>  <br>
+
+        <div>
+            <H1 id="result-desigh">Your Results</H1>
+        </div> <br>
+        <div class="fex_box_row_3" id="flex_box_row_3_id" style="text-align: center;">
+                <table class="tableClass" id="table-id">
+                    <tr>
+                        <th style="text-align: center;">Wins </th>
+                        <th style="text-align: center;">Losses </th>
+                        <th style="text-align: center;">Draws </th>
+                    </tr>
+                    <tr>
+                        <td><Span id="win">0</Span></td>
+                        <td><span id="loss">0</span> </td>
+                        <td><span id="draw">0</span> </td>
+                    </tr>
+                </table>
+        </div>
+        
+        <br>
+    </div> <br><br>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
